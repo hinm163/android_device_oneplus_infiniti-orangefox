@@ -23,23 +23,23 @@
 
 ### Clone & Sync Source
 ```
-mkdir -p ~/android/OrangeFox_14
-cd ~/android/OrangeFox_14
-git clone https://gitlab.com/OrangeFox/sync.git
+mkdir -p ~/android/OrangeFox_16
+cd ~/android/OrangeFox_16
+git clone https://github.com/OrangeFox16/sync.git
 cd sync
-./orangefox_sync.sh --branch 14.1 --path ~/android/fox_14.1
+./orangefox_sync.sh --branch 16.0 --path ~/android/fox_16.0
 ```
 ### Clone Device-tree
 ```
-cd ~/android/fox_14.1/device
+cd ~/android/fox_16.0/device
 mkdir -p oneplus
 cd oneplus
-git clone https://github.com/koaaN/android_device_infiniti-orangefox -b R12 infiniti
+git clone https://github.com/koaaN/android_device_infiniti-orangefox -b fox_16.0 infiniti
 ```
 ### BUILD!
 ```
-cd ~/android/fox_14.1
+cd ~/android/fox_16.0
 source build/envsetup.sh
-lunch twrp_infiniti-ap2a-eng
+lunch twrp_infiniti-bp2a-eng
 mka adbd recoveryimage
 ```
