@@ -115,7 +115,7 @@ jobs:
         WORKINGDIR=$(pwd)
         cd $WORKINGDIR/bootable/recovery
         if ls $WORKINGDIR/device/${{ github.event.inputs.DEVICE_PATH }}/patches/*.patch 1> /dev/null 2>&1; then
-            git apply $WORKINGDIR/device/${{ github.event.inputs.DEVICE_PATH }}/patches/*.patch
+            git apply --whitespace=fix --ignore-space-change --reject $WORKINGDIR/device/${{ github.event.inputs.DEVICE_PATH }}/patches/*.patch
         fi
         cd $WORKINGDIR
 
