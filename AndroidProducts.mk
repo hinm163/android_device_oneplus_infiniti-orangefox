@@ -14,4 +14,5 @@ PRODUCT_MAKEFILES := \
 COMMON_LUNCH_CHOICES := \
     twrp_infiniti-user \
     twrp_infiniti-userdebug \
-    twrp_infiniti-eng
+    twrp_infiniti-eng \
+    twrp_infiniti-bp2a-eng

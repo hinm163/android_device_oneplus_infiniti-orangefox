@@ -24,6 +24,10 @@ PRODUCT_PACKAGES += \
     lpunpack \
     fox_thermal_guard
 
+#
+PRODUCT_APEX_SYSTEM_SERVER_JARS += com.android.crashrecovery:service-crashrecovery
+PRODUCT_CHECK_PREBUILT_MAX_PAGE_SIZE := false
+
 # OTA certs
 PRODUCT_EXTRA_RECOVERY_KEYS += \
 	$(LOCAL_PATH)/security/local_OTA \
